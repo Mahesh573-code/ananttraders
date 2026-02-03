@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Anant Traders | Sarees & Ladies Wear</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="logo">Anant Traders</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#products">Shop</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="dark-toggle" onclick="toggleDark()">🌙</button>
+<div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero animate">
+  <h1>Elegant Sarees & Ladies Fashion</h1>
+  <p>Tradition Meets Modern Style</p>
+  <button onclick="scrollToProducts()">Explore Collection</button>
+</section>
+
+<!-- STATS -->
+<section class="stats animate">
+  <div><h2 data-count="500">0</h2><p>Happy Customers</p></div>
+  <div><h2 data-count="40">0</h2><p>Years Experience</p></div>
+  <div><h2 data-count="100">0</h2><p>Products Sold</p></div>
+</section>
+
+<!-- FILTER -->
+<section class="filter animate">
+  <button onclick="filterItems('all')">All</button>
+  <button onclick="filterItems('saree')">Sarees</button>
+  <button onclick="filterItems('dress')">Dresses</button>
+  <button onclick="filterItems('kurti')">Kurtis</button>
+</section>
+
+<section id="products" class="products animate">
+  <h2>Our Collections</h2>
+
+  <div class="slider-container">
+    <button class="arrow left" onclick="slideLeft()">❮</button>
+
+    <div class="slider" id="productSlider">
+
+      <div class="card saree">
+        <img src="C:\Users\mahes\OneDrive\Desktop\3\Images\38.jpeg">
+        <h3>Designer Saree</h3>
+        <p class="price">₹1,999</p>
+        <button onclick="orderNow('Designer Saree')">Order</button>
+      </div>
+
+      <div class="card saree">
+        <img src="C:\Users\mahes\OneDrive\Desktop\3\Images\31.jpeg">
+        <h3>Designer Saree</h3>
+        <p class="price">₹1,999</p>
+        <button onclick="orderNow('Designer Saree')">Order</button>
+      </div>
+
+      <div class="card saree">
+        <img src="C:\Users\mahes\OneDrive\Desktop\3\Images\36.jpeg">
+        <h3>Designer Saree</h3>
+        <p class="price">₹1,999</p>
+        <button onclick="orderNow('Designer Saree')">Order</button>
+      </div>
+
+      <div class="card saree">
+        <img src="C:\Users\mahes\OneDrive\Desktop\3\Images\32.jpeg">
+        <h3>Designer Saree</h3>
+        <p class="price">₹1,999</p>
+        <button onclick="orderNow('Designer Saree')">Order</button>
+      </div>
+
+      <div class="card saree">
+        <img src="C:\Users\mahes\OneDrive\Desktop\3\Images\37.jpeg">
+        <h3>Designer Saree</h3>
+        <p class="price">₹1,999</p>
+        <button onclick="orderNow('Designer Saree')">Order</button>
+      </div>
+
+      <div class="card saree">
+        <img src="C:\Users\mahes\OneDrive\Desktop\3\Images\33.jpeg">
+        <h3>Designer Saree</h3>
+        <p class="price">₹1,999</p>
+        <button onclick="orderNow('Designer Saree')">Order</button>
+      </div>
+
+      <div class="card saree">
+        <img src="C:\Users\mahes\OneDrive\Desktop\3\Images\34.jpeg">
+        <h3>Designer Saree</h3>
+        <p class="price">₹1,999</p>
+        <button onclick="orderNow('Designer Saree')">Order</button>
+      </div>
+
+      <div class="card saree">
+        <img src="C:\Users\mahes\OneDrive\Desktop\3\Images\35.jpeg">
+        <h3>Designer Saree</h3>
+        <p class="price">₹1,999</p>
+        <button onclick="orderNow('Designer Saree')">Order</button>
+      </div>
+
+      <div class="card saree">
+        <img src="C:\Users\mahes\OneDrive\Desktop\3\Images\39.jpeg">
+        <h3>Designer Saree</h3>
+        <p class="price">₹1,999</p>
+        <button onclick="orderNow('Designer Saree')">Order</button>
+      </div>
+
+
+      <div class="card dress">
+        <img src="C:\Users\mahes\OneDrive\Desktop\3\Images\21.jpeg">
+        <h3>Ladies Dress</h3>
+        <p class="price">₹1,499</p>
+        <button onclick="orderNow('Ladies Dress')">Order</button>
+      </div>
+  <div class="card dress">
+        <img src="C:\Users\mahes\OneDrive\Desktop\3\Images\22.jpeg">
+        <h3>Ladies Dress</h3>
+        <p class="price">₹1,499</p>
+        <button onclick="orderNow('Ladies Dress')">Order</button>
+      </div>
+  <div class="card dress">
+        <img src="C:\Users\mahes\OneDrive\Desktop\3\Images\23.jpeg">
+        <h3>Ladies Dress</h3>
+        <p class="price">₹1,499</p>
+        <button onclick="orderNow('Ladies Dress')">Order</button>
+      </div>
+  <div class="card dress">
+        <img src="C:\Users\mahes\OneDrive\Desktop\3\Images\24.jpeg">
+        <h3>Ladies Dress</h3>
+        <p class="price">₹1,499</p>
+        <button onclick="orderNow('Ladies Dress')">Order</button>
+      </div>
+  <div class="card dress">
+        <img src="C:\Users\mahes\OneDrive\Desktop\3\Images\25.jpeg">
+        <h3>Ladies Dress</h3>
+        <p class="price">₹1,499</p>
+        <button onclick="orderNow('Ladies Dress')">Order</button>
+      </div>
+  <div class="card dress">
+        <img src="C:\Users\mahes\OneDrive\Desktop\3\Images\26.jpeg">
+        <h3>Ladies Dress</h3>
+        <p class="price">₹1,499</p>
+        <button onclick="orderNow('Ladies Dress')">Order</button>
+      </div>
+  <div class="card dress">
+        <img src="C:\Users\mahes\OneDrive\Desktop\3\Images\27.jpeg">
+        <h3>Ladies Dress</h3>
+        <p class="price">₹1,499</p>
+        <button onclick="orderNow('Ladies Dress')">Order</button>
+      </div>
+  <div class="card dress">
+        <img src="C:\Users\mahes\OneDrive\Desktop\3\Images\28.jpeg">
+        <h3>Ladies Dress</h3>
+        <p class="price">₹1,499</p>
+        <button onclick="orderNow('Ladies Dress')">Order</button>
+      </div>
+  <div class="card dress">
+        <img src="C:\Users\mahes\OneDrive\Desktop\3\Images\29.jpeg">
+        <h3>Ladies Dress</h3>
+        <p class="price">₹1,499</p>
+        <button onclick="orderNow('Ladies Dress')">Order</button>
+      </div>
+
+      <div class="card kurti">
+        <img src="C:\Users\mahes\OneDrive\Desktop\3\Images\1.jpeg">
+        <h3>Kurti Set</h3>
+        <p class="price">₹999</p>
+        <button onclick="orderNow('Kurti Set')">Order</button>
+      </div>
+
+      <div class="card kurti">
+        <img src="C:\Users\mahes\OneDrive\Desktop\3\Images\2.jpeg">
+        <h3>Kurti Set</h3>
+        <p class="price">₹999</p>
+        <button onclick="orderNow('Kurti Set')">Order</button>
+      </div>
+<div class="card kurti">
+        <img src="C:\Users\mahes\OneDrive\Desktop\3\Images\3.jpeg">
+        <h3>Kurti Set</h3>
+        <p class="price">₹999</p>
+        <button onclick="orderNow('Kurti Set')">Order</button>
+      </div>
+<div class="card kurti">
+        <img src="C:\Users\mahes\OneDrive\Desktop\3\Images\4.jpeg">
+        <h3>Kurti Set</h3>
+        <p class="price">₹999</p>
+        <button onclick="orderNow('Kurti Set')">Order</button>
+      </div>
+<div class="card kurti">
+        <img src="C:\Users\mahes\OneDrive\Desktop\3\Images\5.jpeg">
+        <h3>Kurti Set</h3>
+        <p class="price">₹999</p>
+        <button onclick="orderNow('Kurti Set')">Order</button>
+      </div>
+<div class="card kurti">
+        <img src="C:\Users\mahes\OneDrive\Desktop\3\Images\6.jpeg">
+        <h3>Kurti Set</h3>
+        <p class="price">₹999</p>
+        <button onclick="orderNow('Kurti Set')">Order</button>
+      </div>
+<div class="card kurti">
+        <img src="C:\Users\mahes\OneDrive\Desktop\3\Images\7.jpeg">
+        <h3>Kurti Set</h3>
+        <p class="price">₹999</p>
+        <button onclick="orderNow('Kurti Set')">Order</button>
+      </div>
+<div class="card kurti">
+        <img src="C:\Users\mahes\OneDrive\Desktop\3\Images\8.jpeg">
+        <h3>Kurti Set</h3>
+        <p class="price">₹999</p>
+        <button onclick="orderNow('Kurti Set')">Order</button>
+      </div>
+<div class="card kurti">
+        <img src="C:\Users\mahes\OneDrive\Desktop\3\Images\9.jpeg">
+        <h3>Kurti Set</h3>
+        <p class="price">₹999</p>
+        <button onclick="orderNow('Kurti Set')">Order</button>
+      </div>	
+ 
+    </div>
+
+    <button class="arrow right" onclick="slideRight()">❯</button>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials animate">
+  <h2>What Customers Say</h2>
+  <p>⭐⭐⭐⭐⭐ “Best saree quality and service!”</p>
+  <p>⭐⭐⭐⭐⭐ “Loved the collection, very elegant.”</p>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="Our Shop">
+  <h2>Our Gallery</h2>
+  <div class="gallery-grid">
+    <img src="C:\Users\mahes\OneDrive\Desktop\3\Images\42.jpeg">
+    <img src="C:\Users\mahes\OneDrive\Desktop\3\Images\41.webp">
+    <img src="C:\Users\mahes\OneDrive\Desktop\3\Images\43.jpeg">
+  </div>
+</section>
+
+<!-- MAP -->
+<section class="map animate">
+  <iframe src="https://maps.google.com/maps?q=Maharashtra&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact animate">
+  <p>📞 +91 9422169611</p>
+  <p>📍 Vinay Market MG Road Old Mondha NandedMaharashtra, India</p>
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img">
+</div>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/919422169611" class="whatsapp-float">💬 WhatsApp</a>
+
+<!-- MOBILE BAR -->
+<div class="mobile-bar">
+  <a href="tel:9422169611">📞 Call</a>
+  <a href="https://wa.me/919422169611">💬 WhatsApp</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
